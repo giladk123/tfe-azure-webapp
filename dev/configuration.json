@@ -19,6 +19,14 @@
           "name": "nic-subnet2",
           "private_ip_allocation_method": "Dynamic"
         }
+      },
+      {
+        "name": "subnet3",
+        "address_prefix": "10.0.3.0/24",
+        "network_interface": {
+          "name": "nic-subnet3",
+          "private_ip_allocation_method": "Dynamic"
+        }
       }
     ],
     "network_security_groups": [
