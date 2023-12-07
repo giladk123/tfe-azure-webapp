@@ -1,0 +1,9 @@
+module "my_vnet_dev" {
+  source       = "../vnet_module"
+  resource_group = local.vnet_settings.resource_group
+  location = local.vnet_settings.location
+  vnet_name = local.vnet_settings.vnet_name
+  address_space = local.vnet_settings.address_space
+  subnet_objects = local.subnet_objects
+  nsg_objects = local.nsg_objects
+}
