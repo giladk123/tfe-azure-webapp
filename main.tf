@@ -8,4 +8,4 @@ module "vnet" {
   subnet_objects = local.subnet_objects
   nsg_objects = local.nsg_objects
 }
-#1
+#12
