@@ -17,4 +17,6 @@ module "blob" {
   location                = local.blob_settings.location
   account_tier            = local.blob_settings.account_tier
   account_replication_type = local.blob_settings.account_replication_type
+
+  depends_on = [ module.vnet ]
 }
