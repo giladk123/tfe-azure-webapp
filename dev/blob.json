@@ -1,0 +1,8 @@
+{
+    "resource_group_name": "hub-dev-rg",
+    "storage_account_name": "crmjgjgdevwetvdrue",
+    "location": "westeurope",
+    "account_tier": "Standard_LRS",
+    "account_replication_type": "LRS"
+}
+  
