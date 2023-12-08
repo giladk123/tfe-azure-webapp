@@ -12,7 +12,6 @@ module "vnet" {
 module "blob" {
   source  = "app.terraform.io/hcta-azure-test/blob/azurerm"
   version = "1.0.0"
-  resource_group_name     = module.vnet.rg_name
   storage_account_name     = local.blob_settings.storage_account_name
   location                = local.blob_settings.location
   account_tier            = local.blob_settings.account_tier
