@@ -1,5 +1,5 @@
 module "vnet" {
-  source = var.module_source_vnet
+  source  = "app.terraform.io/hcta-azure-dev/vnet/azurerm"
   version = "2.0.0"
   resource_group = local.vnet_settings.resource_group
   location = local.vnet_settings.location
@@ -10,7 +10,7 @@ module "vnet" {
 }
 
 module "blob" {
-  source = var.module_source_blob
+  source  = "app.terraform.io/hcta-azure-dev/blob/azurerm"
   version = "3.0.0"
   resource_group_name = local.blob_settings.resource_group_name
   storage_account_name     = local.blob_settings.storage_account_name
